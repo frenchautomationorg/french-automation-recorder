@@ -14,7 +14,7 @@ document.addEventListener('click', function (e) {
 	    data.tagName = target.tagName;
 	    data.value = target.value;
 	    data.type = target.type;
-	    data.text = text;
+	    // data.text = text;
 
     	if (target.value == '') {
     		data.operation = 'focus';
@@ -33,7 +33,7 @@ document.addEventListener('click', function (e) {
 	    data.tagName = target.tagName;
 	    data.value = target.value;
 	    data.type = target.type;
-	    data.text = text;
+	    // data.text = text;
 		data.operation = 'click';
   		ipc.send('clickEvent', data);
   	}
@@ -45,7 +45,7 @@ document.addEventListener('click', function (e) {
         data.tagName = target.tagName;
         data.value = target.value;
         data.href = target.href;
-        data.text = text;
+        // data.text = text;
         data.operation = 'click';
         ipc.send('clickEvent', data);
     }
@@ -56,7 +56,7 @@ document.addEventListener('click', function (e) {
         data.tagName = target.tagName;
         data.value = target.value;
         data.href = target.href;
-        data.text = text;
+        // data.text = text;
         data.operation = 'click';
         ipc.send('clickEvent', data);
     }
@@ -77,7 +77,7 @@ document.addEventListener('submit', function (e) {
     data.type = target.type;
     data.action = target.action;
     data.method = target.method;
-    data.text = text;
+    // data.text = text;
 	data.operation = 'submit';
 
 	ipc.send('submitEvent', data);
@@ -100,7 +100,7 @@ document.addEventListener('change', function (e) {
 	    data.tagName = target.tagName;
 	    data.value = target.value;
 	    data.type = target.type;
-	    data.text = text;
+	    // data.text = text;
 
     	if (target.value == '') {
     		data.operation = 'focus';
@@ -121,7 +121,7 @@ document.addEventListener('change', function (e) {
         data.tagName = target.tagName;
         data.value = target.value;
         data.type = target.type;
-        data.text = text;
+        // data.text = text;
         data.operation = 'select';
 
         ipc.send('changeEvent', data);
