@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bonjour le monde !</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+</head>
+<body>
+    <h1 id="title" name="toto">Bonjour le monde !</h1>
+    Nous utilisons Node <script>document.write(process.versions.node)</script>,
+    Chrome <script>document.write(process.versions.chrome)</script>,
+    et Electron <script>document.write(process.versions.electron)</script>.
+    <input id="field" name="field_name" value="">
+</body>
+<!-- You can also require other files to run in this process -->
+<script src="./renderer.js"></script>
+</html>
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>French Automation Robot</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+    <div style="height: 575px; background: url('../assets/img/background.png') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+      <center>
+        <img src="../assets/img/logo_fa.png" width="150px" style="padding-top:30px;" />
+        <h2><b>Session Recorder<span id="id"></span></b></h2><br>
+      </center>
+        <div class="container">
+          <div class="form-group">
+            <label for="labelUrl">Start URL</label>
+            <input id="url" name="url" class="form-control" width="100%" value="https://app-suivi-integration.newmips.studio/login">
+          </div>  
+        </div>  
+       <center>
+        <br><br>
+        <button id="launchBtn" class="btn btn-lg btn-danger"><i class="fa fa-circle"></i>&nbsp;&nbsp;
+          Enregistrer la session
+        </button>
+      </center>
+        <div style="text-align: right; color: #fff; margin-top: 170px; padding-right: 15px;">French Automation IT &trade; - Version v1.0.0</div>
+      
+    </div>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script>window.jQuery = window.$ = require("../assets/js/jquery.min.js");</script>
+    <script>const router = require('../assets/js/router.js');</script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+      $("#launchBtn").click(function () {
+        let url = $("#url").val();
+        router.load(url);
+      });
+
+    </script>
+
+  </body>
+</html>
