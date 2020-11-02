@@ -2,7 +2,7 @@
 RPA Open Source French Automation
 
 ## Overview
-French Automation recorder enables to create program that can be used by French Automation robot for process automationis. User session is recorded as a program that can be uploaded in the orchestrator for further use.
+French Automation recorder enables to create program that can be used by French Automation robots for process automation. User session is recorded as a program that can be uploaded in the orchestrator for further use.
 <br/>
 
 
