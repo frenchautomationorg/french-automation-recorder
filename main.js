@@ -12,7 +12,8 @@ function createWindow () {
     height: 600,
     webPreferences: {
       nodeIntegration: true
-    }
+    },
+    icon: './assets/img/new_logo_newmips.png'
   })
 
 
